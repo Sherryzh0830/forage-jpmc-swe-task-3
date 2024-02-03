@@ -47,6 +47,7 @@ class App extends Component<{}, IState> {
         </header>
         <div className="App-content">
           <button className="btn btn-primary Stream-button" onClick={() => {this.getDataFromServer()}}>Start Streaming Data</button>
+          <button className="btn btn-primary Stream-button" onClick={() => {window.location.reload()}}>Stop Streaming Data</button>
           <div className="Graph">
             {this.renderGraph()}
           </div>
